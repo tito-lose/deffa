@@ -307,7 +307,7 @@ async function sendBug() {
   resDiv.innerText = "";
 
 try {
-  const res = await fetch(`https://cella-why.mydigital-store.me/permen?chatId=${encodeURIComponent(chatId)}&type=${selectedBug}`);
+  const res = await fetch(`https://deffa-api.mydigital-store.me/deffa?chatId=${encodeURIComponent(chatId)}&type=${selectedBug}`);
   const json = await res.json();
 
   showPopup(`DEFFA Bug successfully sent to <b>${input}</b>`);
